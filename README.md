@@ -1,32 +1,38 @@
-💬 AI Customer Support Agent
-An intelligent, multi-step customer support assistant built with LangChain, LangGraph, and Groq LLMs.
+# 💬 AI Customer Support Agent
+
+An intelligent, multi-step customer support assistant built with **LangChain**, **LangGraph**, and **Groq LLMs**.  
 It automatically classifies, analyzes, and responds to user queries across billing, technical, and general topics — and escalates only when needed.
 
-📁 Project Structure
-plaintext
-Copy
-Edit
+---
+
+## 📁 Project Structure
+
 ai-customer-support/
 ├── src/
-│   ├── __init__.py
-│   ├── state.py        # Defines shared agent state
-│   ├── nodes.py        # Node handlers for classification, sentiment, etc.
-│   ├── graph.py        # LangGraph workflow configuration
-│   ├── app.py          # Streamlit frontend UI
-│   └── test_agent.py   # Optional test driver
-├── .env                # Contains GROQ_API_KEY
+│ ├── init.py
+│ ├── state.py # Defines shared agent state
+│ ├── nodes.py # Node handlers for classification, sentiment, etc.
+│ ├── graph.py # LangGraph workflow configuration
+│ ├── app.py # Streamlit frontend UI
+│ └── test_agent.py # Optional test driver
+├── .env # Contains GROQ_API_KEY
 ├── README.md
-└── pyproject.toml      # Project dependencies and metadata
-🚀 Quick Start
-✅ Prerequisites
-Python 3.11+
+└── pyproject.toml # Project dependencies and metadata
+ 
+---
 
-Valid Groq API key from https://console.groq.com
+## 🚀 Quick Start
 
-⚙️ Installation
-bash
-Copy
-Edit
+### ✅ Prerequisites
+
+- Python **3.11+**
+- Valid Groq API key → [https://console.groq.com](https://console.groq.com)
+
+---
+
+### ⚙️ Installation
+
+```bash
 git clone https://github.com/yourusername/ai-customer-support.git
 cd ai-customer-support
 python -m venv .venv
@@ -43,9 +49,9 @@ bash
 Copy
 Edit
 streamlit run src/app.py
-Access it at http://localhost:8501.
+Then open your browser to: http://localhost:8501
 
-🧪 Example Support Queries
+💡 Example Support Queries
 💳 Billing
 “How do I update my payment method?”
 
@@ -83,12 +89,12 @@ sentiment	Positive, neutral, or negative
 agent_scratchpad	Tracks toolchain usage (optional)
 error	Captures LLM/tool errors
 
-🧩 Workflow
-plaintext
+🔄 Workflow
+sql
 Copy
 Edit
-User Message ➝ Categorization ➝ Sentiment ➝ Route ➝ Sub-Agent ➝ Response
-🔧 Node Overview
+User Message ➝ Categorization ➝ Sentiment ➝ Routing ➝ Sub-Agent ➝ Response
+🧩 Node Overview
 Node	Role
 categorize	Classify the user’s query
 analyze_sentiment	Detect tone (positive/negative)
@@ -98,32 +104,30 @@ handle_general	General inquiries
 handle_escalation	Escalates to human if necessary
 
 🧪 Testing
-Run the test agent manually:
+To test the agent manually:
 
 bash
 Copy
 Edit
 cd ai-customer-support
 python src/test_agent.py
-⚙️ Development & Debugging
-Debug Logging
-Enable verbose logs by setting:
+🛠 Development & Debugging
+🔍 Debug Logging
+Enable detailed logs by adding this to .env:
 
 env
 Copy
 Edit
 LOGGING_LEVEL=DEBUG
-VS Code Settings (Recommended)
+⚙️ Recommended VS Code Settings
 json
-Copy
-Edit
 {
   "python.testing.pytestEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
 }
 📦 Dependencies
-Listed in pyproject.toml. Core packages include:
+Defined in pyproject.toml. Key packages include:
 
 Package	Version
 langchain-core	^0.3.49
@@ -132,22 +136,32 @@ langgraph	^0.4.8
 streamlit	^1.32.0
 python-dotenv	^1.0.1
 
-🧑‍💻 Contributing
+🤝 Contributing
 🍴 Fork this repository
 
-🌿 Create a new feature branch
+🌱 Create a feature branch
 
-💬 Make changes with clear commit messages
+✍️ Commit your changes
 
-✅ Open a pull request
+🔁 Submit a pull request
 
 📄 License
 MIT License — free to use, adapt, and share.
 
-🆘 Support
-🐛 GitHub Issues
+📬 Support
+🧾 GitHub Issues
 
 📧 Email: support@example.com
 
-Built with ❤️ using LangChain, LangGraph, and Groq LLMs.
+Built with ❤️ using LangChain, LangGraph, and Groq.
+
+ 
+---
+
+
+
+
+
+
+
 
