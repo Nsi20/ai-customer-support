@@ -5,13 +5,15 @@
 *.py text diff=python
 *.pyw text diff=python
 
-# Config files
+# Configs and data
 *.toml text
 *.yaml text
 *.yml text
 *.json text
 *.lock text
+.env.example text
 .python-version text
+requirements.txt text
 
 # Documentation
 *.md text diff=markdown
@@ -20,6 +22,7 @@ LICENSE text
 # Windows scripts
 *.bat text eol=crlf
 *.cmd text eol=crlf
+*.ps1 text eol=crlf
 
 # Unix scripts
 *.sh text eol=lf
