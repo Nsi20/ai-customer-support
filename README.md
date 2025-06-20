@@ -7,19 +7,20 @@ It automatically classifies, analyzes, and responds to user queries across billi
 
 ## 📁 Project Structure
 
+
+```
 ai-customer-support/
 ├── src/
-│ ├── init.py
-│ ├── state.py # Defines shared agent state
-│ ├── nodes.py # Node handlers for classification, sentiment, etc.
-│ ├── graph.py # LangGraph workflow configuration
-│ ├── app.py # Streamlit frontend UI
-│ └── test_agent.py # Optional test driver
-├── .env # Contains GROQ_API_KEY
+│   ├── __init__.py
+│   ├── state.py          # Defines shared agent state
+│   ├── nodes.py          # Node handlers for classification, sentiment, etc.
+│   ├── graph.py          # LangGraph workflow configuration
+│   ├── app.py            # Streamlit frontend UI
+│   └── test_agent.py     # Optional test driver
+├── .env                  # Contains GROQ_API_KEY
 ├── README.md
-└── pyproject.toml # Project dependencies and metadata
- 
----
+└── pyproject.toml        # Project dependencies and metadata
+```
 
 ## 🚀 Quick Start
 
@@ -157,6 +158,8 @@ Built with ❤️ using LangChain, LangGraph, and Groq.
 
  
 ---
+
+
 
 
 
